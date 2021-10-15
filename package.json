@@ -1,0 +1,22 @@
+{
+  "name": "is-my-avocado-fresh",
+  "version": "0.0.1",
+  "description": "Not sure yet..",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justredpaul/is-my-avocado-fresh.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justredpaul/is-my-avocado-fresh/issues"
+  },
+  "homepage": "https://github.com/justredpaul/is-my-avocado-fresh#readme",
+  "private": true,
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  }
+}
