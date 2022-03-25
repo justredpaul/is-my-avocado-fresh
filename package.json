@@ -17,6 +17,8 @@
   "homepage": "https://github.com/justredpaul/is-my-avocado-fresh#readme",
   "private": true,
   "devDependencies": {
-    "parcel": "^2.0.0"
+    "@parcel/packager-raw-url": "^2.4.0",
+    "@parcel/transformer-webmanifest": "^2.4.0",
+    "parcel": "^2.4.0"
   }
 }
