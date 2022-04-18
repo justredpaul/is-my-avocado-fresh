@@ -36,3 +36,6 @@ dist/
 
 ### WebStorm ###
 .idea/
+
+### I18n ###
+/extracted-i18n/
