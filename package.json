@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Not sure yet..",
   "scripts": {
-    "start": "parcel src/index.html --open",
+    "start": "parcel src/index.html --https --open",
     "build": "parcel build src/index.html",
     "=== I18n ===": "",
     "i:extract": "formatjs extract 'src/**/*.ts*' --ignore='**/*.d.ts' --out-file extracted-i18n/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'",
@@ -34,6 +34,7 @@
     "nanostores": "^0.5.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-intl": "^5.25.0"
+    "react-intl": "^5.25.0",
+    "react-router-dom": "^6.3.0"
   }
 }
