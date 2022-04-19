@@ -11,17 +11,17 @@ const LOCALE_NAMES = {
 };
 const DEFAULT_LOCALE = 'en';
 
-export type TLocaleStore = typeof AVAILABLE_LOCALES[number];
-export const localeState = atom<TLocaleStore>(DEFAULT_LOCALE);
+export type TLocale = typeof AVAILABLE_LOCALES[number];
+export const localeState = atom<TLocale>(DEFAULT_LOCALE);
 
 type i18nConfig = {
-    defaultLocale: string;
-    availableLocales: string[];
+    defaultLocale: TLocale;
+    availableLocales: typeof AVAILABLE_LOCALES;
 }
 
 class LocaleService {
-    private readonly defaultLocale: string;
-    private readonly availableLocales: string[];
+    private readonly defaultLocale: TLocale;
+    private readonly availableLocales: typeof AVAILABLE_LOCALES;
     private loadMessages(locale: string) {
         return fetch(`/locales/${locale}.json`);
     }
@@ -39,7 +39,7 @@ class LocaleService {
         return this.defaultLocale;
     }
 
-    async getMessages(locale: string) {
+    async getMessages(locale: TLocale) {
         if (this.availableLocales.includes(locale)) {
             let messages = null;
 
@@ -76,11 +76,11 @@ export const I18nProvider = (props) => {
 };
 
 export const I18nSwitcher = () => {
-    const updateLocale = _locale => localeState.set(_locale);
+    const updateLocale = (_locale: TLocale) => localeState.set(_locale);
 
     return (
         <>
-            {AVAILABLE_LOCALES.map(_locale => (
+            {AVAILABLE_LOCALES.map((_locale: TLocale) => (
                 <button type="button" onClick={() => updateLocale(_locale)}>
                     {LOCALE_NAMES[_locale]}
                 </button>
