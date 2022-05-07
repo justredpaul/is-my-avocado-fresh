@@ -1,11 +1,11 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 
-import { AppRoutes } from './routes';
-import { I18nProvider } from './I18n';
+import { I18nProvider } from './components/I18nProvider';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { GlobalError } from './screens/globalError';
 import { StylesProvider } from './components/StylesProvider';
+import { AppRoutes } from './routes';
 
 ReactDOM.render(
     <I18nProvider>

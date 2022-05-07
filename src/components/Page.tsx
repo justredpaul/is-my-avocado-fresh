@@ -1,14 +1,14 @@
 import * as React from 'react';
 
 import { styled } from '../../stitches.config';
+import { TChildrenProp } from '../types/common';
 
 const Wrapper = styled('main', {
     padding: '$s5',
 });
 
-type TProps = {
+type TProps = TChildrenProp & {
     title: string;
-    children: JSX.Element | JSX.Element[];
 }
 
 export const TestIds = {

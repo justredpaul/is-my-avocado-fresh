@@ -1,8 +1,8 @@
 import * as React from 'react';
+import { TChildrenProp } from '../types/common';
 
-type TProps = {
+type TProps = TChildrenProp & {
     fallbackComponent: JSX.Element | JSX.Element[];
-    children: JSX.Element | JSX.Element[];
     logService?: any;
 };
 

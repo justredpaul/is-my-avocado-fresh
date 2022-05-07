@@ -3,6 +3,7 @@ import type * as Stitches from '@stitches/react';
 import { normalize } from 'stitches-normalize-css';
 
 import { globalCss } from '../../stitches.config';
+import { TChildrenProp } from '../types/common';
 
 const globalStyles: Record<string, Stitches.CSS> = {
     body: {
@@ -27,12 +28,10 @@ const globalStyles: Record<string, Stitches.CSS> = {
 
 const global = globalCss(...normalize, globalStyles);
 
-type TProps = {
-    children: JSX.Element;
-};
+type TProps = TChildrenProp;
 
 export const StylesProvider = (props: TProps) => {
     global();
 
-    return props.children;
+    return <>{props.children}</>;
 };
