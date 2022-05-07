@@ -39,3 +39,6 @@ dist/
 
 ### I18n ###
 /extracted-i18n/
+
+### Tests ###
+/coverage
