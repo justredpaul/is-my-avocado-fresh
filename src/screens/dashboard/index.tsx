@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 
+import { Page } from '../../components/Page';
+
 export const DashboardScreen = () => (
-    <>
-        <h1>Dashboard</h1>
+    <Page title="Dashboard">
         <Outlet />
-    </>
+    </Page>
 );
 
 export const DashboardIndex = () => (
