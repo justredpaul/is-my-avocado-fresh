@@ -25,6 +25,7 @@ const Dot = styled('button', {
     borderRadius: '14px',
     border: 'none',
     backgroundColor: '$blue500',
+    padding: 0,
     '& + &': {
         marginLeft: '$s4',
     },
