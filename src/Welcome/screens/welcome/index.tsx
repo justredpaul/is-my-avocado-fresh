@@ -77,7 +77,7 @@ export const WelcomeScreen = () => {
     ]), [intl]);
 
     useEffect(() => {
-        MaxCarouselState.set(slides.length);
+        MaxCarouselState.set(slides.length - 1);
     }, []);
 
     useEffect(() => {

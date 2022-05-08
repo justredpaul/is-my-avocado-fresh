@@ -6,7 +6,9 @@ module.exports = {
         '^.+\\.(ts|tsx)?$': 'ts-jest',
         "^.+\\.(js|jsx)$": "babel-jest",
     },
-    transformIgnorePatterns: ['<rootDir>/node_modules/'],
+    transformIgnorePatterns: [
+        '<rootDir>/node_modules/(?!nanostores)'
+    ],
     testTimeout: 30000,
     collectCoverage: true,
     coveragePathIgnorePatterns: [
