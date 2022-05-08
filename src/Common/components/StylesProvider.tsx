@@ -6,11 +6,28 @@ import { globalCss } from '../../../stitches.config';
 import { TChildrenProp } from '../types/common';
 
 const globalStyles: Record<string, Stitches.CSS> = {
+    '*': {
+        boxSizing: 'border-box',
+    },
+    html: {
+        width: '100%',
+        height: '100%',
+    },
     body: {
+        width: '100%',
+        height: '100%',
+
+        margin: 0,
+        padding: 0,
+
         fontFamily: '$open-sans',
 
         backgroundColor: '$darkBlue500',
         color: '$white500',
+    },
+    '#root': {
+        width: '100%',
+        height: '100%',
     },
     '.visually-hidden': {
         position: 'absolute',

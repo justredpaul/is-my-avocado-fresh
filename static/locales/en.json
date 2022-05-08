@@ -1,3 +1,15 @@
 {
-  "globalError.title": "Something went wrong!"
+  "carousel.1.alt": "A bunch of food products",
+  "carousel.1.message": "Create an account to track stocks and manage products expiration date",
+  "carousel.1.title": "Keep Your Products Fresh",
+  "carousel.2.alt": "The woman eats a freshly made salad",
+  "carousel.2.message": "Create an account to track stocks and manage products expiration date",
+  "carousel.2.title": "Be Creative in Cooking",
+  "carousel.3.alt": "The man and the woman having a picnic",
+  "carousel.3.message": "Create an account to track stocks and manage products expiration date",
+  "carousel.3.title": "Enjoy the Moments with Food",
+  "globalError.title": "Something went wrong!",
+  "globalLoading.title": "Loading..",
+  "welcome.next": "Next",
+  "welcome.skip": "Skip"
 }

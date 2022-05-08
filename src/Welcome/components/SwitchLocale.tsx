@@ -6,6 +6,9 @@ import { localeState } from '../../Common/stores/locale.store';
 import { AVAILABLE_LOCALES, LOCALE_NAMES } from '../../Common/constants/i18n';
 
 const Select = styled('select', {
+    position: 'absolute',
+    top: '$s4',
+    right: '$s4',
     border: '2px solid blue',
 });
 
@@ -17,7 +20,7 @@ export const SwitchLocale = () => {
     return (
         <Select value={locale} onChange={onChange}>
             {AVAILABLE_LOCALES.map(_locale => (
-                <option value={_locale}>{LOCALE_NAMES[_locale]}</option>
+                <option key={`locale_${_locale}`} value={_locale}>{LOCALE_NAMES[_locale]}</option>
             ))}
         </Select>
     );
