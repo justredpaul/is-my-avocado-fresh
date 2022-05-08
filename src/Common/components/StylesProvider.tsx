@@ -1,8 +1,8 @@
 import * as React from 'react';
-import type * as Stitches from '@stitches/react';
+import * as Stitches from '@stitches/react';
 import { normalize } from 'stitches-normalize-css';
 
-import { globalCss } from '../../stitches.config';
+import { globalCss } from '../../../stitches.config';
 import { TChildrenProp } from '../types/common';
 
 const globalStyles: Record<string, Stitches.CSS> = {

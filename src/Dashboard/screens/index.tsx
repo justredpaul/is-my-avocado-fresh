@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 
-import { Page } from '../../components/Page';
+import { Page } from '../components/Page';
 
 export const DashboardScreen = () => (
     <Page title="Dashboard">

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { styled } from '../../stitches.config';
-import { TChildrenProp } from '../types/common';
+import { styled } from '../../../stitches.config';
+import { TChildrenProp } from '../../Common/types/common';
 
 const Wrapper = styled('main', {
     padding: '$s5',
