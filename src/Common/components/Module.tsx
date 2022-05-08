@@ -5,9 +5,7 @@ import { GlobalError } from './GlobalError';
 import { GlobalLoading } from './GlobalLoading';
 import { TChildrenProp } from '../types/common';
 
-type TProps = {
-    children: TChildrenProp,
-}
+type TProps = TChildrenProp;
 
 export const Module = (props: TProps) => (
     <ErrorBoundary fallbackComponent={<GlobalError />}>
