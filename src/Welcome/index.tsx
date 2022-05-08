@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { useStore } from '@nanostores/react';
 
+import { SwitchLocale } from './components/SwitchLocale';
 import { WelcomeScreen } from './screens/welcome';
 import { isAuthenticatedState } from '../Common/stores/user.store';
 import { NotFoundScreen } from '../Common/screens/notFound';
@@ -18,9 +19,12 @@ export const Welcome = (props: TProps) => {
     }
 
     return (
-        <Routes>
-            <Route path="/" element={<WelcomeScreen />} />
-            <Route path="*" element={<NotFoundScreen />} />
-        </Routes>
+        <>
+            <SwitchLocale />
+            <Routes>
+                <Route path="/" element={<WelcomeScreen />} />
+                <Route path="*" element={<NotFoundScreen />} />
+            </Routes>
+        </>
     );
 };
