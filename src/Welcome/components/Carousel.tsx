@@ -38,14 +38,18 @@ const Dot = styled('button', {
     },
 });
 
-export const Carousel = (props) => {
+type TProps = {
+    slides: JSX.Element[],
+}
+
+export const Carousel = (props: TProps) => {
     const active = useStore(CarouselState);
 
     return (
         <Wrapper>
             {props.slides[active]}
             <Pagination>
-                {props.slides.map((_, index) => (
+                {props.slides.map((_, index: number) => (
                     <Dot key={`pagination_dot_${index}`}
                         active={active === index}
                         onClick={() => CarouselState.set(index)}

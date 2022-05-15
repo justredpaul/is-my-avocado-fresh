@@ -10,8 +10,11 @@ import { isCarouselFinished, MaxCarouselState } from '../../stores/carousel.stor
 import { url as registerUrl } from '../register';
 import { CarouselItem } from '../../components/CarouselItem';
 
+// @ts-ignore
 import illustration_1 from 'url:../../../assets/images/food.png';
+// @ts-ignore
 import illustration_2 from 'url:../../../assets/images/eating.png';
+// @ts-ignore
 import illustration_3 from 'url:../../../assets/images/picnic.png';
 
 export const WelcomeScreen = () => {

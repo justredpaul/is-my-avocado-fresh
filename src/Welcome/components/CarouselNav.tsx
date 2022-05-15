@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { useStore } from '@nanostores/react';
+import { FormattedMessage } from 'react-intl';
 
 import { styled, css } from '../../../stitches.config';
 import { url as registerUrl } from '../screens/register';
 import { Button } from '../../Common/components/Button';
 import { isLastSlide, nextSlideAction } from '../stores/carousel.store';
-import { useStore } from '@nanostores/react';
-import { FormattedMessage } from 'react-intl';
 
 const Wrapper = styled('div', {
     width: '100%',
@@ -27,7 +27,7 @@ const SkipLink = css({
 });
 
 export const CarouselNav = () => {
-    const isFinished = useStore(isLastSlide);
+    const _isLastSlide = useStore(isLastSlide);
     const navigate = useNavigate();
 
     return (
@@ -36,7 +36,7 @@ export const CarouselNav = () => {
                 <FormattedMessage id="welcome.skip"
                     defaultMessage="Skip" />
             </NavLink>
-            {isFinished ? (
+            {_isLastSlide ? (
                 <Button onClick={() => navigate(registerUrl, { replace: true })}>
                     <FormattedMessage id="welcome.next"
                         defaultMessage="Next" />
