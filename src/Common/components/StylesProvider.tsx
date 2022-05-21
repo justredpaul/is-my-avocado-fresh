@@ -22,8 +22,8 @@ const globalStyles: Record<string, Stitches.CSS> = {
 
         fontFamily: '$open-sans',
 
-        backgroundColor: '$darkBlue500',
-        color: '$white500',
+        backgroundColor: '$darkblue',
+        color: '$white',
     },
     '#root': {
         width: '100%',

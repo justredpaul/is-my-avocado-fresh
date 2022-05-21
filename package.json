@@ -42,9 +42,11 @@
   "dependencies": {
     "@nanostores/react": "^0.2.0",
     "@stitches/react": "^1.2.8",
+    "final-form": "^4.20.7",
     "nanostores": "^0.5.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-final-form": "^6.5.9",
     "react-intl": "^5.25.0",
     "react-router-dom": "^6.3.0",
     "stitches-normalize-css": "^1.2.0"

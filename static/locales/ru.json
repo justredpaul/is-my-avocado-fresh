@@ -10,6 +10,18 @@
   "carousel.3.title": "Наслаждайтесь моментами вместе с едой",
   "globalError.title": "Что-то пошло не так!",
   "globalLoading.title": "Загрузка..",
+  "login.password": "Пароль",
+  "login.submit": "Войти",
+  "login.switch_link": "Нет аккаунта?",
+  "login.title": "С возвращением",
+  "login.username": "Имя пользователя",
+  "register.email": "Email",
+  "register.password": "Пароль",
+  "register.submit": "Создать аккаунт",
+  "register.switch_link": "Уже есть аккаунт?",
+  "register.terms": "Согласен с правилами использования",
+  "register.title": "Создать аккаунт",
+  "register.username": "Имя пользователя",
   "welcome.next": "Дальше",
   "welcome.skip": "Пропустить"
 }

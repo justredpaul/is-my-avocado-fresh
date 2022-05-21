@@ -24,7 +24,7 @@ const Dot = styled('button', {
     height: '14px',
     borderRadius: '14px',
     border: 'none',
-    backgroundColor: '$blue500',
+    backgroundColor: '$blue',
     padding: 0,
     '& + &': {
         marginLeft: '$s4',
@@ -32,7 +32,7 @@ const Dot = styled('button', {
     variants: {
         active: {
             true: {
-                backgroundColor: '$white500',
+                backgroundColor: '$white',
             },
         },
     },

@@ -1,3 +1,4 @@
+// @ts-ignore
 import { createStitches } from '@stitches/react';
 
 export const {
@@ -12,10 +13,13 @@ export const {
 } = createStitches({
     theme: {
         colors: {
-            white500: 'hsl(315,24%,93%)',
-            darkBlue500: 'hsl(225,14%,11%)',
-            blue500: 'hsl(248,19%,30%)',
-            primary500: 'hsl(131,52%,43%)',
+            white: 'hsl(315,24%,93%)',
+            white70: 'hsla(315,24%,93%, 0.7)',
+            darkblue: 'hsl(225,14%,11%)',
+            blue: 'hsl(248,19%,30%)',
+            blue40: 'hsla(248,19%,30%, 0.4)',
+            primary: 'hsl(131,52%,43%)',
+            attention: 'hsl(0,55%,43%)',
         },
         space: {
             s0: '4px',
@@ -28,6 +32,7 @@ export const {
             s7: '32px',
             s8: '36px',
             s9: '40px',
+            s10: '64px',
         },
         radii: {
             r1: '8px',

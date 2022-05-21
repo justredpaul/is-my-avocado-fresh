@@ -23,7 +23,7 @@ const SkipLink = css({
     fontSize: '24px',
     fontWeight: '$light',
     textDecoration: 'none',
-    color: '$white500',
+    color: '$white',
 });
 
 export const CarouselNav = () => {

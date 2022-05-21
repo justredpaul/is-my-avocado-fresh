@@ -13,3 +13,10 @@ export const Page = styled('div', {
 
     padding: '$s4 $s4 $s9',
 });
+
+export const PageTitle = styled('h1', {
+    width: '100%',
+    marginBottom: '$s10',
+
+    fontSize: '$fz3',
+});

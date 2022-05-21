@@ -7,6 +7,7 @@ import { WelcomeScreen } from './screens/welcome';
 import { isAuthenticatedState } from '../Common/stores/user.store';
 import { NotFoundScreen } from '../Common/screens/notFound';
 import { RegisterScreen, url as registerUrl } from './screens/register';
+import { LoginScreen, url as loginUrl } from './screens/login';
 import { Page } from './components/Page';
 
 type TProps = {
@@ -26,6 +27,7 @@ export const Welcome = (props: TProps) => {
             <Routes>
                 <Route path="/" element={<WelcomeScreen />} />
                 <Route path={registerUrl} element={<RegisterScreen />} />
+                <Route path={loginUrl} element={<LoginScreen />} />
                 <Route path="*" element={<NotFoundScreen />} />
             </Routes>
         </Page>

@@ -12,7 +12,7 @@ type TProps = TChildrenProp;
 
 export const I18nProvider = (props: TProps) => {
     const locale = useStore(localeState);
-    const [messages, setMessages] = useState<Record<string, string>>(undefined);
+    const [messages, setMessages] = useState<Record<string, string>>({});
 
     useEffect(() => {
         LocaleInstance.getMessages(locale).then(setMessages);
