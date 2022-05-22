@@ -24,12 +24,13 @@ const FakeInput = styled('span', {
     variants: {
         focused: {
             true: {
-                borderColor: '$primary'
+                borderColor: '$primary',
             }
         },
         checked: {
             true: {
-                backgroundColor: '$blue',
+                backgroundColor: '$primary',
+                borderColor: '$primary',
             }
         },
         indeterminate: {
