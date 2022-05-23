@@ -42,15 +42,19 @@ type TProps = {
     slides: JSX.Element[],
 }
 
+export const PaginationTestId = 'pagination';
+export const DotTestIdPrefix = 'dot_';
+
 export const Carousel = (props: TProps) => {
     const active = useStore(CarouselState);
 
     return (
         <Wrapper>
             {props.slides[active]}
-            <Pagination>
+            <Pagination data-testid={PaginationTestId}>
                 {props.slides.map((_, index: number) => (
                     <Dot key={`pagination_dot_${index}`}
+                        data-testid={`${DotTestIdPrefix}${index}`}
                         active={active === index}
                         onClick={() => CarouselState.set(index)}
                         aria-label={`Go to slide ${index + 1}`}
