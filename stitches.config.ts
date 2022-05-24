@@ -15,11 +15,13 @@ export const {
         colors: {
             white: 'hsl(315,24%,93%)',
             white70: 'hsla(315,24%,93%, 0.7)',
+            white30: 'hsla(315,24%,93%, 0.3)',
             darkblue: 'hsl(225,14%,11%)',
             blue: 'hsl(248,19%,30%)',
             blue40: 'hsla(248,19%,30%, 0.4)',
             primary: 'hsl(131,52%,43%)',
             attention: 'hsl(0,55%,43%)',
+            notification: 'hsl(18,59%,45%)'
         },
         space: {
             s0: '4px',

@@ -1,4 +1,8 @@
-import { atom } from 'nanostores';
+import { atom, computed } from 'nanostores';
 
-export const userState = atom({});
-export const isAuthenticatedState = atom(false);
+export const userState = atom({
+    name: 'Pavel',
+});
+export const isAuthenticatedState = atom(true);
+
+export const userName = computed(userState, user => user.name);

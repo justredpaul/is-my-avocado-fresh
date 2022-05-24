@@ -14,7 +14,11 @@ import { WriteOffScreen } from './screens/writeOff';
 import { SettingsScreen } from './screens/settings';
 import { AccountScreen } from './screens/account';
 
-export const Dashboard = (props) => {
+type TProps = {
+    loginUrl: string;
+};
+
+export const Dashboard = (props: TProps) => {
     const isAuthenticated = useStore(isAuthenticatedState);
 
     if (!isAuthenticated) {

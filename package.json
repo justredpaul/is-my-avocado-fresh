@@ -10,7 +10,7 @@
     "i:compile": "formatjs compile-folder extracted-i18n/ static/locales/",
     "=== Testing ===": "",
     "test": "uvu -r tsm -r jsdom-global/register src utest.ts",
-    "test:coverage": "c8 --include=src npm test"
+    "test:coverage": "c8 --all --include=src npm test"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "12.1.2",
     "@types/jest": "^27.5.0",
+    "@types/react-dom": "^18.0.5",
     "@types/sinon": "^10.0.11",
     "babel-plugin-formatjs": "^10.3.19",
     "c8": "^7.11.3",

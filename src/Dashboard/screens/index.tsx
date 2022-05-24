@@ -2,6 +2,8 @@ import * as React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 
 import { Page } from '../components/Page';
+import { Header } from '../components/Header';
+import { Notifications } from '../components/Notifications';
 
 export const DashboardScreen = () => (
     <Page title="Dashboard">
@@ -11,7 +13,8 @@ export const DashboardScreen = () => (
 
 export const DashboardIndex = () => (
     <>
-        <NavLink to="notifications">Notifications</NavLink>
+        <Header />
+        <Notifications />
         <NavLink to="grocery">Grocery</NavLink>
         <NavLink to="stocktaking">Stocktaking</NavLink>
         <NavLink to="explore">Explore</NavLink>
